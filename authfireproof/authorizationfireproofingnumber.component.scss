@@ -1,0 +1,98 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .pagination button {
+    margin: 0 5px;
+    /* padding: 5px 10px; */
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  /* .pagination button.active {
+    background-color: #007bff;
+    color: white;
+  } */
+
+  .pagination button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  
+  table #even_color:nth-child(even) {
+
+    background-color:#eeffe3;
+  }
+  .trSelect{
+    background-color:#b8f095 !important;
+  }
+  .modal {
+display: block;
+position: fixed;
+z-index: 1050;
+left: 26%;
+top: 10%;
+width: 40%;
+height: 70%;
+overflow: hidden;
+
+border-top: 30px solid #eeffe3;
+border-left: 2px solid #eeffe3;
+border-right: 2px solid #eeffe3;
+border-bottom: 2px solid #eeffe3;
+background-image: url("/assets/Hekisou/admin/images/back.gif");
+}
+
+.modal-dialog {
+margin: 100px auto;
+}
+
+.modal-content {
+padding: 5px;
+}
+.close-btn{
+position: fixed;
+left: 65%;
+top: 10%;    
+}
+/* loader custom css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Blurring effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+  .spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Light grey background */
+    border-radius: 50%;
+    border-top: 8px solid #ffffff; /* White spinner */
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  .trSelect{
+    background-color:#b8f095 !important;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
